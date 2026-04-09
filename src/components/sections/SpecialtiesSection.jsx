@@ -13,9 +13,7 @@ function SpecialtiesSection({ businessConfig, copy }) {
     <section className="section-shell section-anchor section-space" id="specialties">
       <Container>
         <SectionHeading
-          description={copy.specialties.description}
           eyebrow={copy.specialties.eyebrow}
-          title={copy.specialties.title}
         />
 
         <div className="mt-6 flex items-center gap-3 md:hidden">
