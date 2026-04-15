@@ -47,9 +47,9 @@ function Footer({
               href={instagramUrl}
               icon="instagram"
               iconPosition="start"
+              rel="noreferrer"
               size="md"
               target="_blank"
-              rel="noreferrer"
               variant="secondary"
             >
               {copy.contact.instagramLabel}
@@ -61,6 +61,17 @@ function Footer({
       <Container className="border-t border-white/8 py-5 text-sm text-white/56">
         <p>
           © {new Date().getFullYear()} {businessConfig.companyName}. {copy.footer.rights}
+        </p>
+        <p className="mt-2 text-white/44">
+          {businessConfig.credits.footerPrefix}{' '}
+          <a
+            className="text-white/70 underline decoration-white/24 underline-offset-4 transition-colors hover:text-white"
+            href={businessConfig.credits.footerUrl}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {businessConfig.credits.footerName}
+          </a>
         </p>
       </Container>
     </footer>

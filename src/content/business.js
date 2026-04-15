@@ -2,7 +2,6 @@ const addressText =
   'Cadde dükkanlar, Kayabaşı, Ulubatlı Hasan Cd a2 /4, 34494 Başakşehir/İstanbul'
 
 const createGoogleMapsSearchUrl = (address) =>
- 
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
 
 export const businessConfig = {
@@ -17,7 +16,6 @@ export const businessConfig = {
   assets: {
     whatsappIconSrc: '/whatsapp-icon.png',
   },
-
   ui: {
     heroRotationIntervalMs: 10_000,
   },
@@ -35,6 +33,11 @@ export const businessConfig = {
     phoneHref: 'tel:+905010674844',
     whatsappNumber: '905010674844',
     instagramUrl: 'TODO_INSTAGRAM_URL',
+  },
+  credits: {
+    footerPrefix: 'Design & development by',
+    footerName: 'Mohamad Ghashim',
+    footerUrl: 'https://www.instagram.com/m_gshim/',
   },
   whatsappMessages: {
     tr: 'Merhaba Bir sorum var',
@@ -94,5 +97,7 @@ export const businessConfig = {
       'assets.whatsappIconSrc değerini başka bir ikon dosyasıyla değiştirebilirsiniz.',
     heroRotationIntervalMs:
       'ui.heroRotationIntervalMs değerini değiştirerek hero başlık dönüş süresini ayarlayabilirsiniz.',
+    footerCredit:
+      'credits.footerPrefix, credits.footerName ve credits.footerUrl değerleriyle footer imzasını ve linkini güncelleyebilirsiniz.',
   },
 }
